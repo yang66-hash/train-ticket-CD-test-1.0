@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ts-consign-service" />
+        <module name="ts-common" />
+        <module name="ts-consign-price-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="circle" target="1.8" />
+      <module name="ts-common" target="8" />
+      <module name="ts-consign-price-service" target="1.8" />
+      <module name="ts-consign-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ts-common" options="-parameters" />
+      <module name="ts-consign-price-service" options="-parameters" />
+      <module name="ts-consign-service" options="-parameters" />
+    </option>
+  </component>
+</project>

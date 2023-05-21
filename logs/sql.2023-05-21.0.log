@@ -1,0 +1,15 @@
+2023-05-21 10:51:15.021 [http-nio-16111-exec-1] INFO  SQL - 1684637475021|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 10:51:15.150 [http-nio-16111-exec-1] INFO  SQL - 1684637475150|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 10:54:44.332 [http-nio-16111-exec-2] INFO  SQL - 1684637684332|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 10:54:44.390 [http-nio-16111-exec-2] INFO  SQL - 1684637684390|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 11:00:25.240 [http-nio-16111-exec-1] INFO  SQL - 1684638025239|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 11:00:25.352 [http-nio-16111-exec-1] INFO  SQL - 1684638025352|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 11:15:46.841 [http-nio-16111-exec-2] INFO  SQL - 1684638946841|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 11:15:46.916 [http-nio-16111-exec-2] INFO  SQL - 1684638946916|Spring Data JPA|consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 11:22:10.402 [http-nio-16111-exec-1] INFO  SQL - 1684639330402|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 11:22:10.511 [http-nio-16111-exec-1] INFO  SQL - 1684639330511|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 15:59:38.956 [http-nio-16111-exec-1] INFO  SQL - 1684655978956|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 15:59:39.073 [http-nio-16111-exec-1] INFO  SQL - 1684655979073|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|insert
+2023-05-21 15:59:40.223 [http-nio-16110-exec-4] INFO  SQL - 1684655980223|Spring Data JPA|ts-consign-price-service|172.16.17.38:3306|ts_consign_price_mysql|null|null|consign_price|select
+2023-05-21 15:59:40.918 [http-nio-16111-exec-3] INFO  SQL - 1684655980918|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|select
+2023-05-21 15:59:41.099 [http-nio-16111-exec-3] INFO  SQL - 1684655981099|Spring Data JPA|ts-consign-service|172.16.17.38:3306|ts_consign_mysql|null|null|consign_record|update

@@ -1,0 +1,4 @@
+# Project exclude paths
+/ts-common/target/
+/ts-consign-price-service/target/
+/ts-consign-service/target/
