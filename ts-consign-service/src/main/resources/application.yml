@@ -2,9 +2,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: ${NACOS_ADDRS:127.0.0.1:8848}
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
   application:
-    name: ts-consign-service
+    name: consign-service
   datasource:
     url: jdbc:mysql://${CONSIGN_MYSQL_HOST:172.16.17.38}:${CONSIGN_MYSQL_PORT:3306}/${CONSIGN_MYSQL_DATABASE:ts_consign_mysql}?useSSL=false
     username: ${CONSIGN_MYSQL_USER:root}

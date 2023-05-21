@@ -49,7 +49,7 @@ public class ConsignPriceServiceImpl implements ConsignPriceService {
         headers.remove("Host");
         HttpEntity requestEntity = new HttpEntity<>(null, headers);
 
-        String consign_price_service_url = getServiceUrl("ts-consign-service");
+        String consign_price_service_url = getServiceUrl("consign-service");
         ResponseEntity<HttpEntity> re = restTemplate.exchange(
                 consign_price_service_url + "/api/v1/consignservice/consigns/" + consignId + "/" + price,
                 HttpMethod.GET,

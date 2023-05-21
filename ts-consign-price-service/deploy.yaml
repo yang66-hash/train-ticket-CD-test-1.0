@@ -1,0 +1,54 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: consignpriceservice
+  namespace: kube-ts-ns
+  labels:
+    app: consign-price-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 16110
+      targetPort: 16110
+  selector:
+    app: consign-price-service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consignpriceservice
+  namespace: kube-ts-ns
+  labels:
+    app: consign-price-service
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: consign-price-service
+  template:
+    metadata:
+      labels:
+        app: consign-price-service
+    spec:
+      imagePullSecrets:
+        - name: $SECRET_NAME
+      containers:
+        - name: consign-price-service
+          image: $IMAGE_NAME
+          ports:
+            - containerPort: 16110
+          volumeMounts:
+            - mountPath: /var/log/mclient
+              name: log-volume
+          env:
+            - name: MCLUSTER_IP
+              value: "172.16.17.37"
+            - name: MCLUSTER_PORT
+              value: "30761"
+      volumes:
+        - name: log-volume
+          hostPath:
+            path: /data/test-dir/log
+
